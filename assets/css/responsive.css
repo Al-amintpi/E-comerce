@@ -71,7 +71,32 @@
 	right: 76px;
 }
 
+/*Shop page responsive*/
 
+.shop-header-left-side {
+	column-count: 2;
+	 
+}
+
+.shop-header-left-side .fresh-new-arival-content:last-child{
+	display: none;
+}
+
+.fresh-new-arival-overly-content ul li:nth-child(1) {
+	left: 119px;
+}
+
+.fresh-new-arival-overly-content ul li:nth-child(2) {
+	right: 117px;
+}
+
+.fresh-new-arival-overly-content ul li:nth-child(3) {
+	left: 37px;
+}
+
+.fresh-new-arival-overly-content ul li:nth-child(4) {
+	right: 114px;
+}
 
 }
 
@@ -221,7 +246,89 @@
 .news-blog-content-last{
 	margin-bottom: 0rem;
 }
- 
+
+/*shop page responsive*/
+.shop-header-left-side {
+	column-count: 2;
+}
+
+.shop-header-left-side .fresh-new-arival-content:last-child{
+	display: none;
+}
+
+.size-filter ul {
+	display: flex;
+	 align-items: none; 
+	 justify-content: none; 
+	justify-content: center;
+}
+
+.color-category ul {
+	justify-content: center;
+}
+
+.filter-color {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.size-filter {
+	text-align: center;
+}
+
+.category-list {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.shop-category {
+	text-align: center;
+}
+
+.filter-selection {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.filter-selection {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.shop-category {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.price-bar {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.manufacture-list {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.manufacture-list {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tag-list {
+	text-align: center;
+}
+
+.tag-list ul {
+	width: 80%;
+	margin: 0 auto;
+}
 
 }
 
@@ -297,6 +404,34 @@
 
 .subscribe {
 	width: 40rem;
+}
+
+/*shop page responsive*/
+.shop-header-left-side {
+	column-count: 1;
+}
+
+.shop-header-content {
+	flex-direction: column;
+}
+
+.size-filter ul {
+	display: flex;
+	 align-items: none; 
+	 justify-content: none; 
+	justify-content: center;
+}
+
+.color-category ul {
+	justify-content: center;
+}
+
+.filter-color {
+	text-align: center;
+}
+
+.size-filter {
+	text-align: center;
 }
 
 } 
