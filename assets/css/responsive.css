@@ -330,6 +330,11 @@
 	margin: 0 auto;
 }
 
+/* blog page responsive */
+.blog-item {
+	column-count: 1;
+}
+
 }
 
 
@@ -432,6 +437,16 @@
 
 .size-filter {
 	text-align: center;
+}
+
+/*blog-page responsive*/
+.right-blog-recent-post-list {
+	flex-direction: column;
+}
+
+.right-blog-twitter-feed-content {
+	 
+	flex-direction: column;
 }
 
 } 
