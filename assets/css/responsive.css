@@ -449,6 +449,12 @@
 	flex-direction: column;
 }
 
+.cart-bar-menu ul {
+	 
+	flex-direction: column;
+	 
+}
+
 } 
 
 
