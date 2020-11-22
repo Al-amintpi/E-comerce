@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -36,8 +36,9 @@
 	<link rel="stylesheet" href="assets/css/progress.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-	<style>
-.accordion {
+
+<style>
+.checkout-accordion {
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -49,11 +50,11 @@
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.checkout-accordion .active, .checkout-accordion:hover {
   background-color: #ccc;
 }
 
-.accordion:after {
+.checkout-accordion:after {
   content: '\002B';
   color: #252525;
   font-weight: bold;
@@ -61,7 +62,7 @@
   margin-left: 5px;
 }
 
-.active:after {
+.checkout-accordion .active:after {
   content: "\2212";
 }
 
@@ -210,269 +211,38 @@
 	<div class="shop-page-title-area">
 		<div class="container">
 			<div class="shop-page-title-content">
-				<h1>Cart</h1>
+				<h1>Checkout</h1>
 			</div>
 		</div>	
 	</div>
 </section>
 <!-- End blog page title section -->
 
-<!-- Start cart bar section -->
-<section class="cart-bar-section">
+<!-- Start-Accrodion-section -->
+<section class="checkout-accrodion-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="cart-bar-menu">
-					<ul>
-						<li><a href="#">01. Shopping Cart</a></li>
-						<li><a href="#">02. Checkout</a></li>
-						<li><a href="#">03. Order Complete</a></li>
-					</ul>
+			<div class="col-md-9">
+				<button class="checkout-accordion">Section 1</button>
+				<div class="panel">
+				  <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</div>
+
+				<button  class="checkout-accordion">Section 2</button>
+				<div class="panel">
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+				</div>
+
+				<button  class="checkout-accordion">Section 3</button>
+				<div class="panel">
+				  <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- End cart bar section -->
+<!-- End Accrodion-section -->
 
-<!-- Start table section -->
-<section class="table-section">
-	<div class="container">  
-		<table class="table">
-			<thead>
-				<tr>
-					<th>PRODUCT</th>
-					<th>PRODUCT NAME</th>
-					<th>PRICE</th>
-					<th>QUANTITY</th>
-					<th>TOTAL</th>
-					<th>ACTION</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="extra-margin">
-					<td>
-						<div class="product-image">
-							<img src="assets/img/cart/1.jpg">
-						</div>
-					</td>
-					<td>
-						<div class="cart-product-details">
-							<h3>Penitone Eu Neque</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<h3>Size : <span>XXL</span></h3>
-						</div>
-					</td>
-					<td><h3>$95</h3></td>
-					<td>
-						<div class="currency shop-short product-quantity">
-						<div class="currency-icon-one">
-						<div class="currency-hidden">
-							<div class="currency-name">
-								<label>
-									<select>
-										<option selected> 0 </option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
-								</label>
-							</div>
-						</div>
-						</div>
-						</div>
-					</td>
-					<td><h3>$190</h3></td>
-					<td>
-						<div class="quantity-action">
-							 <span>x</span>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="product-image">
-							<img src="assets/img/cart/2.jpg">
-						</div>
-					</td>
-					<td>
-						<div class="cart-product-details">
-							<h3>Penitone Eu Neque</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<h3>Size : <span>XXL</span></h3>
-						</div>
-					</td>
-					<td><h3>$95</h3></td>
-					<td>
-						<div class="currency shop-short product-quantity">
-							<div class="currency-icon-one">
-							<div class="currency-hidden">
-								<div class="currency-name">
-									<label>
-										<select>
-											<option selected> 0 </option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</label>
-								</div>
-							</div>
-							</div>
-						</div>
-					</td>
-					<td><h3>$190</h3></td>
-					<td>
-						<div class="quantity-action">
-							 <span>x</span>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="mobile-responsive">
-			<div class="mobile">
-		 	<div class="product-image">
-				<img src="assets/img/cart/2.jpg">
-			</div>
-			<div class="mobile-product-details">
-				<div class="cart-product-details">
-
-					<h3>Penitone Eu Neque</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur</p>
-					<h3>Size : <span>XXL</span></h3>
-					<p>Price :<span>$95</span></p>
-					 <div class="currency shop-short product-quantity">
-						<div class="currency-icon-one">
-							<div class="currency-hidden">
-								<div class="currency-name">
-									<label>
-										<select>
-											<option selected> 0 </option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<p>Total Price :<span>$125</span></p>
-				</div>
-			</div>
-			</div>
-			<div class="mobile">
-		 	<div class="product-image">
-				<img src="assets/img/cart/2.jpg">
-			</div>
-			<div class="mobile-product-details">
-				<div class="cart-product-details">
-
-					<h3>Penitone Eu Neque</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur</p>
-					<h3>Size : <span>XXL</span></h3>
-					<p>Price :<span>$95</span></p>
-					 <div class="currency shop-short product-quantity">
-						<div class="currency-icon-one">
-							<div class="currency-hidden">
-								<div class="currency-name">
-									<label>
-										<select>
-											<option selected> 0 </option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<p>Total Price :<span>$125</span></p>
-				</div>
-			</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End table section -->
-
-<!-- Start section three button -->
-<section class="continue-clear-update">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="continue-clear-update-button">
-					<ul>
-						<li><a href="#">CONTINUE SHOPPING</a></li>
-						<li>
-							<div class="clear-update">
-								<ul>
-									<li><a href="#">CLEAR SHOPPING CART</a></li>
-									<li><a href="#">UPDATE SHOPPING CART</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- End section three button -->
-
-<!-- start section discount coupon -->
-<section class="discount-section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<form>
-				<div class="discount-main-area">
-					<div class="discount-area">
-						<div class="discount-leftside">
-							<ul>
-							<li><h3>DISCOUNT COUPON CODE</h3></li>
-							<li>
-								<div class="discount-inputbox">
-									<form>
-										<input type="text" name="" placeholder="discount coupon code here..">
-										<input type="submit" name="" value="apply coupon">
-									</form>
-								</div>
-							</li>
-							</ul>
-						</div>
-						<div class="discount-right">
-						<ul>
-							<li class="sub-total">Sub Total <span>$400</span></li>
-							<li class="grand-total">Grand Total<span>$400</span></li>
-						</ul>
-						</div>
-					</div>
-					<button>PROCEED TO CHECK OUT</button>
-				</form>
-				</div>	
-			</div>
-		</div>
-	</div>	
-</section>
-<div class="note">
-	<div class="container">
-		<p><span>NOTE :</span> Shipping and Taxes are estimated and updated during checkout based on your billing and shipping information.</p>
-	</div>
-</div>
-
-<!-- End section discount coupon -->
 
 <!-- Start Brand section -->
 <section class="brand-section">
@@ -644,25 +414,28 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/custome.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script type="text/javascript">
+    	
+$(document).ready(function(){
+	 
+	var acc = document.getElementsByClassName("checkout-accordion");
+		console.log(acc.length);
+		var i;
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-console.log(acc.length);
-var i;
-
-for (i = 0; i < acc.length; i++) {
-	console.log(i);
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>    
-
+		for (i = 0; i < acc.length; i++) {
+			console.log(i);
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight) {
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+});
+    </script>
+  
 </body>
 </html>	
