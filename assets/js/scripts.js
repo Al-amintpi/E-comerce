@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#getting-started').countdown('2020/11/17', function(event) {
+	$('#getting-started').countdown('2021/01/01', function(event) {
     $(this).html(event.strftime(''
       +'<div class="count"><div class="line-height"><h1>%D</h1><h3>days</h3></div></div>'
       +'<div class="count"><div class="line-height"><h1>%H</h1><h3>hour</h3></div></div>'
@@ -86,7 +86,7 @@ $(document).ready(function(){
 		 
 	});
 
-	$('#hot-count-down').countdown('2020/11/17', function(event) {
+	$('#hot-count-down').countdown('2021/01/01', function(event) {
     $(this).html(event.strftime(''
       +'<div class="hot-deals-count-down"><div class="hot-deals-first"><div class="hot-deals-line-height"><h1>%D</h1><h3>days</h3></div></div><div class="hot-deals-first"><div class="hot-deals-line-height"><h1>%H</h1><h3>hour</h3></div></div></div>'
       +'<div class="hot-deals-count-down hot-deals-second"><div class="hot-deals-first"><div class="hot-deals-line-height"><h1>%M</h1><h3>min</h3></div></div><div class="hot-deals-first"><div class="hot-deals-line-height"><h1>%S</h1><h3>sec</h3></div></div></div>'
@@ -213,3 +213,24 @@ $( function() {
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
   } );
 
+// checkout Accorodion
+
+$(document).ready(function(){
+	 
+	var acc = document.getElementsByClassName("checkout-accordion");
+		console.log(acc.length);
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			console.log(i);
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight) {
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+});

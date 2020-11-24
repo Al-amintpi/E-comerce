@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -11,7 +11,7 @@
 	<meta property="og:image" content="">
 
     <link rel="icon" href="assets/img/favicon.png">
-    <title>Blog page </title>
+    <title>Checkout page </title>
 
      <!-- font-family  -->
      <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -37,43 +37,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
-<style>
-.checkout-accordion {
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.checkout-accordion .active, .checkout-accordion:hover {
-  background-color: #ccc;
-}
-
-.checkout-accordion:after {
-  content: '\002B';
-  color: #252525;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.checkout-accordion .active:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-</style>
+ 
 </head>
 <body>
 
@@ -178,14 +142,13 @@
 		<div class="header-area-3">
 				<div class="menu">
 					<ul>
-						<li><a href="#" class="active">HOME</a></li>
-						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">SHOP</a></li>
-						<li><a href="#">MEN</a></li>
-						<li><a href="#">WOMEN</a></li>
-						<li><a href="#">ACCESSORIES</a></li>
-						<li><a href="#">BLOG</a></li>
-						<li><a href="#">CONTACT</a></li>            
+						<li><a href="index.html" class="active">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="shop.html">SHOP</a></li>
+						<li><a href="cart.html">CART</a></li>
+						<li><a href="checkout.html">CHECKOUT</a></li>
+						<li><a href="blog.html">BLOG</a></li>
+						<li><a href="contact.html">CONTACT</a></li>            
 					</ul>
 				</div> 
 				<div class="search-hidden-area">
@@ -223,19 +186,142 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
-				<button class="checkout-accordion">Section 1</button>
-				<div class="panel">
-				  <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+				<button class="checkout-accordion"><span>1</span> CHECKOUT METHOD </button>
+				<div class="checkout-panel">
+					<div class="checkout-method">
+						<div class="checkout-guest">
+							<form>
+								<h1>CHECKOUT AS A GUEST OR REGISTER</h1>
+					  			<h2>Register with us for future convenience</h2>
+					  			<div>
+					  				<input type="radio" id="male" name="gender" value="male">
+					  				<label>Checkout as Guest</label>
+					  			</div>
+					  			<div>
+					  				<input type="radio" id="male" name="gender" value="male">
+					  				<label>Register</label>
+					  			</div>
+					  			<h3>REGISTER AND SAVE TIME!</h3>
+					  			<ul>
+					  				<li><span></span>Fast and easy checkout</li>
+					  				<li><span></span>Easy access to your order history and status</li>
+					  			</ul>
+					  			<button class="guest_btn">CONTINUE</button>
+				  			</form>
+				  		</div>
+				  		<div class="checkout-login">
+				  			<form>
+					  			<h1> LOGIN </h1>
+					  			<h2>Already registered?</h2>
+					  			<p>Please login below</p>
+					  			<div class="checkout-label">
+					  				<div class="form-group login-form">
+    									<p><label>Email*</label></p>
+    									<input type="email" placeholder="">
+  									</div>
+						  			<div class="form-group login-form">
+						  				<p><label>Password*</label></p>
+						  			 	<input type="password" name=""> 
+						  			 </div>
+					  			</div>
+					  			<p><a href="#" class="forget_password">forgot your password?</a></p>
+					  			<button class="login_btn">Login</button>
+				  			</form>
+				  		</div>
+				  	</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="checkout-progess">
+					<h1>CHECKOUT PROGRESS</h1>
+					<ul>
+						<li><a href="#">Billing Address</a></li>
+						<li><a href="#">Shipping Address</a></li>
+						<li><a href="#">Shipping Method</a></li>
+						<li><a href="#">Payment Method</a></li>
+						 
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- billing-information -->
+		<div class="row">
+			<div class="col-md-12">
+				<button class="checkout-accordion"><span>2</span> BILLING INFORMATION</button>
+				<div class="checkout-panel">
+					<div class="billing-address-button">
+						<form class="row g-3">
+						  	<div class="col-md-6">
+							    <input type="text" class="form-control" id="" name="first-name" placeholder="FIRST NAME*">
+						  	</div>
+						  	<div class="col-md-6">
+							    <input type="text" class="form-control" id="" name="last-name" placeholder="LAST NAME*">
+						  	</div>
+						  	<div class="col-md-12">
+							    <input type="text" class="form-control" id="" name="company-name" placeholder="COMPANY NAME (OPTIONAL)">
+						  	</div>
+						  	<div class="col-md-12">
+							    <input type="text" class="form-control" id="" name="street-address" placeholder="STREET ADDRESS*">
+						  	</div>
+						  	<div class="col-md-12">
+							    <input type="text" class="form-control" id="" name="city" placeholder="CITY*">
+						  	</div>
+						  	<div class="col-md-2">
+							    <input type="text" class="form-control" id="" name="postcode" placeholder="POSTCODE / ZIP*">
+						  	</div>
+						  	<div class="col-md-10">
+							    <input type="text" class="form-control" id="" name="state-country" placeholder="STATE / COUNTRY">
+						  	</div>
+						  		<div class="col-md-6">
+							    <input type="text" class="form-control" id="" name="email-address" placeholder="EMAIL ADDRESS*">
+						  	</div>
+						  		<div class="col-md-6">
+							    <input type="text" class="form-control" id="" name="phone-number" placeholder="PHONE NUMBER*">
+						  	</div>
+						  	<div class="col-auto">
+							    <div class="form-check">
+							      	<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+							      	<label class="form-check-label" for="autoSizingCheck">
+							        Check this if the billing address is the same as Shipping address
+							     	</label>
+							    </div>
+							 </div>
+							 <div class="billing-checkout">
+							 	<a href="#">CONTINUE</a>
+							 </div>
+						  	 
+						</form>
+					</div>	
+				</div>
+				<button class="checkout-accordion"><span>3</span> SHIPPING INFORMATION</button>
+				<div class="checkout-panel">
+					<h3 style="color:#8dc740">Add shipping information</h3>
+				</div>	
+				<button class="checkout-accordion"><span>4</span> SHIPPING METHOD</button>
+				<div class="checkout-panel">
+					<h3 style="color:#8dc740">Add shipping information</h3>
 				</div>
 
-				<button  class="checkout-accordion">Section 2</button>
-				<div class="panel">
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+				<button class="checkout-accordion"><span>5</span> PAYMENT INFORMATION</button>
+				<div class="checkout-panel">
+					<div class="checkout-payment-method">
+						 <ul>
+						 	<li><h3>Choose your payment method :</h3></li>
+						 	<li><a href="#"><img src="assets/img/checkout/1.png"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/2.png"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/3.png"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/4.png"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/5.png"></a></li>
+						 </ul>
+					</div>
+					<div class="checkout-pay-content">
+						<h3>YOUR PAYPAL ACCOUNT</h3>
+						<p>Pay via credit or debit card, Paypal transfer or even via Bank account in just a few clicks.This method is super easy and well protected.</p>
+					</div>
 				</div>
-
-				<button  class="checkout-accordion">Section 3</button>
-				<div class="panel">
-				  <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+				<button class="checkout-accordion"><span>6</span> ORDER REVIEW</button>
+				<div class="checkout-panel">
+					<h3 style="color:#8dc740">Add shipping information</h3>
 				</div>
 			</div>
 		</div>
@@ -414,28 +500,6 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/custome.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script type="text/javascript">
-    	
-$(document).ready(function(){
-	 
-	var acc = document.getElementsByClassName("checkout-accordion");
-		console.log(acc.length);
-		var i;
-
-		for (i = 0; i < acc.length; i++) {
-			console.log(i);
-		  acc[i].addEventListener("click", function() {
-		    this.classList.toggle("active");
-		    var panel = this.nextElementSibling;
-		    if (panel.style.maxHeight) {
-		      panel.style.maxHeight = null;
-		    } else {
-		      panel.style.maxHeight = panel.scrollHeight + "px";
-		    } 
-		  });
-		}
-});
-    </script>
   
 </body>
 </html>	

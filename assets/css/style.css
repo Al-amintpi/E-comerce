@@ -2249,6 +2249,7 @@ display: none;
 	color: #fff;
 	margin-left: 5rem;
 	text-transform: uppercase;
+	max-width: 300px;
 }
 
 .shop-header-section {
@@ -3242,4 +3243,685 @@ display: none;
 
 .mobile{
 	display: none;
+}
+
+ 
+
+/************ checkout page css *************/
+
+  /**********************************/
+ /*****checkout accrodion css*******/
+/**********************************/
+
+.checkout-accordion {
+	position: relative;
+	color: #444;
+	cursor: pointer;
+	padding: 9px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 18px;
+	transition: 0.4s;
+	font-weight: 600;
+	color: #8dc740;
+	background: #252525;
+}
+.checkout-accordion::after {
+	content: '\f078';
+	font: normal normal normal 17px/1 FontAwesome;
+	color: #252525;
+	font-weight: 600;
+	float: right;
+	margin-left: 0px;
+	width: 3rem;
+	height: 3rem;
+	background: #8dc740;
+	color: #fff;
+	line-height: 28px;
+	text-align: center;
+	bottom: 0;
+	position: absolute;
+	right: 0;
+	transition: .5s;
+}
+
+.checkout-accordion.active::after {
+	content: '\f078';
+	font: normal normal normal 17px/1 FontAwesome;
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+	line-height: 24px;
+	transition: .5s;
+	transform: rotate(179deg);
+}
+
+.checkout-panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	margin: 2rem 0;
+}
+
+.checkout-accordion {
+	color: #444;
+	cursor: pointer;
+	padding: 9px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
+	font-weight: 600;
+	color: #8dc740;
+}
+
+.checkout-accordion span {
+	color: #fff;
+	width: 3rem;
+	height: 3rem;
+	background: #8dc740;
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+}
+
+  /**********************************/
+ /*******checkout methodcss*********/
+/**********************************/
+
+.checkout-accrodion-section {
+	padding: 3rem 0;
+}
+
+.checkout-method {
+	display: flex;
+	justify-content: space-between;
+}
+
+.checkout-guest {}
+
+.checkout-guest h1, .checkout-login h1{
+	font-size: 1.6rem;
+	color: #252525;
+	font-weight: 600;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #cccccc;
+
+}
+
+.checkout-guest h2, .checkout-login h2 {
+	color: #252525;
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.checkout-guest input[type="radio"] {
+	margin: 0rem 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.checkout-guest p {
+	font-size: 1.6rem;
+	color: #717171;
+	font-weight: 400;
+}
+
+.checkout-guest h3 {
+	font-size: 1.6rem;
+	color: #252525;
+	font-weight: 400;
+	margin: 1rem 0;
+}
+
+.checkout-guest ul{}
+
+.checkout-guest ul li {
+	font-size: 1.6rem;
+	font-weight: 300;
+	color: #6f6262;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+.checkout-guest ul li span {
+	width: .7rem;
+	height: .7rem;
+	display: inline-block;
+	background: #707070;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.guest_btn {
+	padding: 1rem 3rem;
+	color: #ffff;
+	background: #8dc740;
+	font-size: 1.6rem;
+	border: 1px solid transparent;
+	font-weight: 600;
+	margin-top: 2rem;
+	transition: .5s;
+}
+
+.checkout-login {
+	 
+}
+
+.checkout-login h1{}
+
+.checkout-login h2{}
+
+.checkout-login h3{}
+
+.checkout-login p {
+	font-size: 1.6rem;
+	color: #616161;
+	margin-bottom: .5rem;
+}
+
+.checkout-login input[type="email"] {
+	height: 3.5rem;
+	border: 1px solid #ccc;
+	color: #ccc;
+	font-size: 1.6rem;
+	padding: 0rem 1rem;
+	margin-bottom: .5rem;
+}
+.checkout-login input[type="password"]{
+	height: 3.5rem;
+	border: 1px solid #ccc;
+	color: #ccc;
+	font-size: 1.6rem;
+	padding: 0rem 1rem;
+	margin-bottom: .5rem;
+}
+
+.checkout-label label {
+	color: #252525;
+	font-size: 1.6rem;
+	font-weight: 400;
+
+}
+
+.forget_password {
+	color: #8dc740;
+	font-size: 1.6rem;
+	font-weight: 300;
+	transition: .3s;
+}
+
+.forget_password:hover{
+	color:#252525;
+}
+
+.login_btn {
+	padding: 1rem 4rem;
+	color: #fff;
+	background: #8dc740;
+	border: 1px solid transparent;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	float: right;
+	margin-top: 1rem;
+	font-weight: 600;
+	transition: .5s;
+}
+
+.login_btn:hover, .guest_btn:hover {
+	background: #fff;
+	border-color: #8dc740;
+	color: #8dc740;
+}
+
+  /**********************************/
+ /*******checkout progress css******/
+/**********************************/
+
+.checkout-progess {}
+
+.checkout-progess h1 {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #252525;
+	padding: 1.3rem 0;
+	border-bottom: 1px solid #cccccc;
+}
+
+.checkout-progess ul {
+	margin-top: 2rem;
+}
+
+.checkout-progess ul li {
+	padding: .3rem 0;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 1rem;
+}
+
+.checkout-progess ul li a {
+	font-size: 1.6rem;
+	color: #616161;
+	padding: .7rem 0;
+	display: inline-block;
+	transition: .3s;
+}
+
+ 
+
+.checkout-progess ul li a:hover{
+	color:#8dc740;
+}
+
+
+  /**********************************/
+ /********Billing address **********/
+/**********************************/
+
+.billing-address-button .form-control {
+	padding: .7rem 1rem;
+	font-size: 1.6rem;
+	color: #495057;
+	border: 1px solid #cccccc !important;
+	border-radius: 0;
+}
+
+.billing-address-button .form-control:focus {
+	border-color: #cccccc;
+	outline: none;
+	box-shadow: none;
+}
+
+.billing-address-button .form-check-input[type="checkbox"] {
+	border-radius:0rem; 
+}
+
+.billing-address-button .form-check-input:checked {
+	background-color: #8dc740;
+	border-color: #8dc740;
+}
+
+.form-check-input:focus {
+	border-color:  #8dc740;
+	outline: none;
+	box-shadow: none; 
+}
+
+.billing-checkout{}
+
+.billing-checkout a {
+	float: right;
+	font-size: 1.6rem;
+	color: #fff;
+	background: #8dc740;
+	padding: 1rem 3rem;
+	font-weight: 600;
+	border: 1px solid transparent;
+	transition: .5s;
+}
+
+.billing-checkout a:hover{
+	border-color: #8dc740;
+	background: #fff;
+	color:#8dc740;
+}
+
+
+  /**********************************/
+ /******** checkout-method *********/
+/**********************************/
+
+.checkout-payment-method {
+	margin-top: 3rem;
+}
+
+.checkout-payment-method ul {
+	display: flex;
+	 align-items: center; 
+	flex-wrap: wrap;
+}
+
+.checkout-payment-method ul li {
+	margin-right: 0.5rem;
+}
+
+.checkout-payment-method ul li:last-child{
+	margin-right: 0rem;
+}
+
+.checkout-payment-method ul li h3, .checkout-pay-content h3{
+	color: #343434;
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+.checkout-payment-method ul li a{}
+
+.checkout-pay-content{
+	margin-top: 3rem;
+}
+
+.checkout-pay-content h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.checkout-pay-content p {
+	font-size: 1.6rem;
+	font-weight: 300;
+	color: #616161;
+	width: 70%;
+	margin-bottom: 2rem;
+}
+
+
+
+/*********contact-page**************/
+
+
+  /**********************************/
+ /******contact-map-address ********/
+/**********************************/
+.map-contact-section {
+	padding: 3rem 0;
+}
+
+.contact-address, .contact-phone, .contact-web{
+	margin-bottom: 1.5rem;
+}
+
+.contact-address ul{}
+
+.contact-address ul li{}
+
+.contact-address ul li a, .contact-phone ul li a, .contact-web ul li a{
+	color: #343434;
+	font-size: 1.8rem;
+	font-weight: 400;
+	transition: .3s;
+}
+
+.contact-address ul li a:hover, .contact-phone ul li a:hover, .contact-web ul li a:hover {
+	color: #8dc740;
+}
+
+.contact-phone {}
+
+.contact-web {}
+
+.contact-image {
+	margin-top: 2rem;
+}
+
+.contact-add-image {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.contact-add-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.contact-add-overly {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.23);
+	height: 100%;
+	width: 100%;
+}
+
+.contact-add-overly h4 {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	width: 80%;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+.leave-messages-form .form-control {
+	padding: .5rem 1rem;
+	font-size: 1.6rem;
+	border: 1px solid #e5e5e5;
+	border-radius: .25rem;
+	color: #827676;
+	margin-bottom: 1rem;
+}
+
+.leave-messages-form .form-control:focus {
+	box-shadow: none;
+	outline: none;
+}
+.leave-messages-label{
+	font-size: 1.6rem;
+	color:#919191;
+	margin-bottom: 1rem;
+}
+
+.leave-messages-label-1{
+	margin-bottom: 0rem;
+}
+
+
+/******************* About page css ************/
+
+   /************************************/
+  /********* history css **************/
+ /************************************/
+
+.history-section {
+	padding-top:3rem;
+}
+
+.history-title {}
+
+.history-title h1 {
+	font-size: 2.4rem;
+	color: #252525;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.history-title h1 span {
+	font-weight: 700;
+	color: #8dc740;
+}
+
+.history-content {
+	margin-top: 2rem;
+}
+
+.history-content p, .history-topic-content p {
+	color: #3e3e3e;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+
+   /************************************/
+  /********* history Topic ************/
+ /************************************/
+
+.history-topic {
+	margin-top: 2rem;
+}
+
+.history-topic ul {
+	margin-left: 1rem;
+}
+
+.history-topic ul li {
+	display: flex;
+	color: #252525;
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+.history-topic ul li:last-child{
+	margin-bottom: 0rem;
+}
+
+.history-topic ul li span {
+	margin-right: 1rem;
+}
+
+.history-topic-content {
+	margin-top: 4rem;
+	 
+}
+
+.history-topic-content p {
+	margin-top: 2rem;
+}
+
+   /************************************/
+  /******** history Image css *********/
+ /************************************/
+
+.history-topic-image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 2rem;
+}
+
+.history-topic-image img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.history-topic-overly {
+	position: absolute;
+	top: 0;
+	right: 0;
+	clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 86% 100%, 42% 49%, 0 0);
+	width: 100%;
+	height: 100%;
+	background: rgb(0,0,0, .5);
+}
+
+.history-topic-overly h3 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #eee9e7;
+	text-align: right;
+	position: absolute;
+	top: 34px;
+	right: 14px;
+}
+
+.history-topic-overly h3 span {
+	font-weight: 300;
+}
+
+.history-topic-overly-2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0,.5);
+	clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0 100%, 68% 24%, 89% 0);
+	bottom: 0;
+	left: 0;
+}
+.history-topic-overly-2 h3 {
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 3rem;
+	font-weight: 400;
+	width: 46%;
+	margin: 0 auto;
+	margin-right: 2rem;
+	color: #d4d3d3;
+}
+.history-topic-overly-2 h3 span{
+	font-weight: 700;
+	color:#fff;
+}
+
+
+   /************************************/
+  /******** Team  css *****************/
+ /************************************/
+.team-section {
+	padding: 3rem 0;
+}
+
+.team-title {
+	text-align: center;
+	padding: 4rem 0;
+}
+
+.team-title h1 {
+	font-size: 3rem;
+	color: #8dc740;
+	font-weight: 700;
+}
+
+.team-title h3 {
+	font-size: 1.6rem;
+	color: #6e6e6e;
+	font-weight: 400;
+}
+
+.team-description {
+	border: 1px solid #cccccc;
+}
+
+.team-member-image {
+	width: 100%;
+	height: 100%;
+}
+
+.team-member-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team-member-content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.team-member-content a{
+	color: #252525;
+	font-size: 2rem;
+	font-weight: 400;
+	margin-top: 2rem;
+	display: block;
+}
+
+.team-member-content a:hover{
+	color:#8dc740;
+}
+
+.team-member-content h3 {
+	color: #252525;
+	font-size: 1.7rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+
+.team-member-content p {
+	font-size: 1.6rem;
+	color: #252525;
+	font-weight: 300;
+	padding: 2rem 0;
+	border-top: 1px solid #d4d3d3;
 }

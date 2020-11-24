@@ -335,12 +335,29 @@
 	column-count: 1;
 }
 
+/*Checkout page responsive*/
+
+.checkout-method {
+	flex-direction: column;
+}
+
+.checkout-login {
+	margin-top: 1rem;
+}
+
+.login_btn {
+	float: left;
+}
+
 }
 
 
 @media all and (max-width: 767px){
 .menu ul {
-	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-wrap: wrap;
 }
 
 .menu ul li {
