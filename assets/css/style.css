@@ -70,6 +70,9 @@ button:focus {
     outline: none;
 }
 
+select:focus {
+    outline: none;
+}
 
    /************************************/
   /********* 1 Header top css *********/
@@ -303,10 +306,10 @@ display: none;
 /*Header area 2 css */
 
 .header-area-2 {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
 }
 
 .header-area-2-left {}
@@ -383,6 +386,11 @@ display: none;
 	font-weight: 300;
 }
 
+.header-area-2-search-bar input[type="search"]:focus {
+    outline: none;
+}
+
+
 .search-box-hidden-bar input[type="search"]{
 	background: #ffff;
 	border:1px solid #8dc740;
@@ -421,7 +429,7 @@ display: none;
 	content: '\f078';
 	font: normal normal normal 17px/1 FontAwesome;
 	color: #fff;
-	left: 153px;
+	left: 145px;
 	top: 5px;
 	position: absolute;
 	pointer-events: none;
@@ -445,6 +453,10 @@ display: none;
 	font-weight: 600;
 	padding-right: 3rem;
 	padding-left: 1rem;
+}
+
+.selectdiv select:focus {
+    outline: none;
 }
 
 .selectdiv .option:hover{
@@ -528,7 +540,7 @@ display: none;
 } 
 
 .close-button a i{
-	transition: 
+ 
 }
 
 .close-button a:hover{
@@ -865,7 +877,7 @@ display: none;
 .fresh-new-arival-content-image:hover .fresh-new-arival-overly-content{
 	visibility: visible;
 	top:0;
-	opacity: 1s;
+	opacity: 1;
 	left: 0;
 
 }
