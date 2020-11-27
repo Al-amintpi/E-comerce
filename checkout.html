@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="title" content="Psd to E-commerce">
@@ -50,8 +50,6 @@
 	<link rel="stylesheet" href="assets/css/progress.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-
- 
 </head>
 <body>
 
@@ -65,7 +63,7 @@
 						<h3>Default welcome msg!</h3>
 					</div>
 					<div class="header-top-right">
-						<div class="currency">
+						<div class="currency currency-top-margin">
 							<div class="currency-icon-one">
 								<div class="currency-hidden">
 									<div class="currency-name">
@@ -83,12 +81,12 @@
 						</div>         
 						<div class="country">
 							<div class="country-icon-two">
-								<a href="#"><img src="assets/img/logo/c1.png">English<i class="fas fa-chevron-up"></i></a>
+								<a href="#"><img src="assets/img/logo/c1.png" alt="image">English<i class="fas fa-chevron-up"></i></a>
 								<div class="country-list">
 									<ul>
-										<li><a href="#"><img src="assets/img/logo/c4.png">Bangladesh</a></li>
-										<li><a href="#"><img src="assets/img/logo/c2.png">India</a></li>
-										<li><a href="#"><img src="assets/img/logo/c3.png">Pakistant</a></li>
+										<li><a href="#"><img src="assets/img/logo/c4.png" alt="image">Bangladesh</a></li>
+										<li><a href="#"><img src="assets/img/logo/c2.png" alt="image">India</a></li>
+										<li><a href="#"><img src="assets/img/logo/c3.png" alt="image">Pakistant</a></li>
 									</ul>
 								</div>
 							</div>
@@ -104,6 +102,7 @@
 <!-- Start header section -->
 <section class="header-section">
 	<div class="container">
+		<h2>heaser area-2</h2>
 		<div class="header-area-1">
 			<div class="header-area-1-left">
 				<ul>
@@ -122,12 +121,12 @@
 			<div class="header-area-2-left">
 				<ul>
 					<li><a href="#"><i class="fas fa-phone"></i>
-					+88 (012) 564 979 56 <p>We are open 9 am - 10pm</p></a></li>
+					+88 (012) 564 979 56 </a><p>We are open 9 am - 10pm</p></li>
 				</ul>
 			</div>
 			<div class="header-area-2-middle">
 				<div class="header-area-2-logo">
-					<img src="assets/img/logo/logo.png">
+					<img src="assets/img/logo/logo.png" alt="image">
 				</div>
 			</div>
 			<div class="header-area-2-right"> 
@@ -146,8 +145,8 @@
 				<div class="header-area-2-search">
 					<div class="header-area-2-search-bar">
 						<form>
-							<input type="search" name="" placeholder="Search">
-							<button><a href="#"><i class="fas fa-search"></i></a></button>
+							<input type="search" name="search" placeholder="Search">
+							<button><i class="fas fa-search"></i></button>
 						</form>
 					</div>
 				</div>
@@ -162,22 +161,24 @@
 						<li><a href="cart.html">CART</a></li>
 						<li><a href="checkout.html">CHECKOUT</a></li>
 						<li><a href="blog.html">BLOG</a></li>
-						<li><a href="contact.html">CONTACT</a></li>            
+						<li><a href="contact.html">CONTACT</a></li>
+						<li>
+							<div class="search-hidden-area">
+								<div class="icon-search-bar">
+									<a href="" class="search-icon"><i class="fas fa-search"></i></a>
+								</div>
+								<div class="search-box-hidden">
+									<div class="search-box-hidden-bar">
+										<form>
+											<input type="search" name="search" placeholder="Search">
+											<button><i class="fas fa-search"></i></button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</li>            
 					</ul>
-				</div> 
-				<div class="search-hidden-area">
-					<div class="icon-search-bar">
-						<a href="" class="search-icon"><i class="fas fa-search"></i></a>
-					</div>
-					<div class="search-box-hidden">
-						<div class="search-box-hidden-bar">
-							<form>
-								<input type="search" name="" placeholder="Search">
-								<button><a href="#"><i class="fas fa-search"></i></a></button>
-							</form>
-						</div>
-					</div>
-				</div>	
+				</div> 	
 			</div>
 	</div>
 </section>
@@ -208,11 +209,11 @@
 								<h1>CHECKOUT AS A GUEST OR REGISTER</h1>
 					  			<h2>Register with us for future convenience</h2>
 					  			<div>
-					  				<input type="radio" id="male" name="gender" value="male">
+					  				<input type="radio" name="checkout">
 					  				<label>Checkout as Guest</label>
 					  			</div>
 					  			<div>
-					  				<input type="radio" id="male" name="gender" value="male">
+					  				<input type="radio" name="register">
 					  				<label>Register</label>
 					  			</div>
 					  			<h3>REGISTER AND SAVE TIME!</h3>
@@ -231,11 +232,11 @@
 					  			<div class="checkout-label">
 					  				<div class="form-group login-form">
     									<p><label>Email*</label></p>
-    									<input type="email" placeholder="">
+    									<input type="email" name="email">
   									</div>
 						  			<div class="form-group login-form">
 						  				<p><label>Password*</label></p>
-						  			 	<input type="password" name=""> 
+						  			 	<input type="password" name="passowrd"> 
 						  			 </div>
 					  			</div>
 					  			<p><a href="#" class="forget_password">forgot your password?</a></p>
@@ -266,31 +267,31 @@
 					<div class="billing-address-button">
 						<form class="row g-3">
 						  	<div class="col-md-6">
-							    <input type="text" class="form-control" id="" name="first-name" placeholder="FIRST NAME*">
+							    <input type="text" class="form-control" id="first-name" name="first-name" placeholder="FIRST NAME*">
 						  	</div>
 						  	<div class="col-md-6">
-							    <input type="text" class="form-control" id="" name="last-name" placeholder="LAST NAME*">
+							    <input type="text" class="form-control" id="last-name" name="last-name" placeholder="LAST NAME*">
 						  	</div>
 						  	<div class="col-md-12">
-							    <input type="text" class="form-control" id="" name="company-name" placeholder="COMPANY NAME (OPTIONAL)">
+							    <input type="text" class="form-control" id="company-name" name="company-name" placeholder="COMPANY NAME (OPTIONAL)">
 						  	</div>
 						  	<div class="col-md-12">
-							    <input type="text" class="form-control" id="" name="street-address" placeholder="STREET ADDRESS*">
+							    <input type="text" class="form-control" id="street-address" name="street-address" placeholder="STREET ADDRESS*">
 						  	</div>
 						  	<div class="col-md-12">
-							    <input type="text" class="form-control" id="" name="city" placeholder="CITY*">
+							    <input type="text" class="form-control" id="city" name="city" placeholder="CITY*">
 						  	</div>
 						  	<div class="col-md-2">
-							    <input type="text" class="form-control" id="" name="postcode" placeholder="POSTCODE / ZIP*">
+							    <input type="text" class="form-control" id="postcode" name="postcode" placeholder="POSTCODE / ZIP*">
 						  	</div>
 						  	<div class="col-md-10">
-							    <input type="text" class="form-control" id="" name="state-country" placeholder="STATE / COUNTRY">
+							    <input type="text" class="form-control" id="country" name="state-country" placeholder="STATE / COUNTRY">
 						  	</div>
 						  		<div class="col-md-6">
-							    <input type="text" class="form-control" id="" name="email-address" placeholder="EMAIL ADDRESS*">
+							    <input type="text" class="form-control" id="email-address" name="email-address" placeholder="EMAIL ADDRESS*">
 						  	</div>
 						  		<div class="col-md-6">
-							    <input type="text" class="form-control" id="" name="phone-number" placeholder="PHONE NUMBER*">
+							    <input type="text" class="form-control" id="phone-number" name="phone-number" placeholder="PHONE NUMBER*">
 						  	</div>
 						  	<div class="col-auto">
 							    <div class="form-check">
@@ -321,11 +322,11 @@
 					<div class="checkout-payment-method">
 						 <ul>
 						 	<li><h3>Choose your payment method :</h3></li>
-						 	<li><a href="#"><img src="assets/img/checkout/1.png"></a></li>
-						 	<li><a href="#"><img src="assets/img/checkout/2.png"></a></li>
-						 	<li><a href="#"><img src="assets/img/checkout/3.png"></a></li>
-						 	<li><a href="#"><img src="assets/img/checkout/4.png"></a></li>
-						 	<li><a href="#"><img src="assets/img/checkout/5.png"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/1.png" alt="image"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/2.png" alt="image"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/3.png" alt="image"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/4.png" alt="image"></a></li>
+						 	<li><a href="#"><img src="assets/img/checkout/5.png" alt="image"></a></li>
 						 </ul>
 					</div>
 					<div class="checkout-pay-content">
@@ -357,25 +358,25 @@
 		</div>
 		<div class="brand-area owl-carousel owl-theme">
 			<div class="brand-logo">
-				<img src="assets/img/brand2/1.jpg">
+				<img src="assets/img/brand2/1.jpg" alt="image">
 			</div>
 			<div class="brand-logo">
-				<img src="assets/img/brand2/2.jpg">
+				<img src="assets/img/brand2/2.jpg" alt="image">
 			</div>
 			<div class="brand-logo">
-				<img src="assets/img/brand2/3.jpg">
+				<img src="assets/img/brand2/3.jpg" alt="image">
 			</div>
 			<div class="brand-logo">
-				<img src="assets/img/brand2/4.jpg">
+				<img src="assets/img/brand2/4.jpg" alt="image">
 			</div>
 			<div class="brand-logo">
-				<img src="assets/img/brand2/5.jpg">
+				<img src="assets/img/brand2/5.jpg" alt="image">
 			</div>
 			<div class="brand-logo">
-				<img src="assets/img/brand2/4.jpg">
+				<img src="assets/img/brand2/4.jpg" alt="image">
 			</div>
 			<div class="brand-logo">
-				<img src="assets/img/brand2/5.jpg">
+				<img src="assets/img/brand2/5.jpg" alt="image">
 			</div>
 		</div>
 	</div>
@@ -400,8 +401,8 @@
 					<div class="newsletter">
 						<h2>NEWSLETTER</h2>
 						<div class="subscribe">
-							<form action="">
-								<input type="email" name="" placeholder="Email here">
+							<form>
+								<input type="email" name="email" placeholder="Email here">
 								<button type="submit">Subscribe</button>
 							</form>
 						</div>	
@@ -411,7 +412,7 @@
 		</div>
 		<div class="footer-middle-area">
 			<div class="footer-logo">
-				<img src="assets/img/logo/logo.png">
+				<img src="assets/img/logo/logo.png" alt="image">
 				<div class="footer-list">
 					<ul>
 						<li><a href="#">8901 Marmora Raod, Glasgow</a></li>
@@ -474,20 +475,19 @@
 	</div>
 </section>
 <!-- End Footer section -->
-
  
 <section class="footer-bottom-are">
 	<div class="container"> 
 		<div class="footer-bottom-content">
 			<div class="copyright">
-				<h4>Copyright &copy 2015 <span><a href="#">BootExpert</a></span>. All rights reserved.</h4>
+				<h4>Copyright &copy; 2015 <span><a href="#">BootExpert</a></span>. All rights reserved.</h4>
 			</div> 
 			<div class="footer-menu">
 				<ul>
-					<li><a href="#">Site Map &nbsp|</a></li>
-					<li><a href="#">Contact Us &nbsp|</a></li>
-					<li><a href="#">Wish List &nbsp|</a></li>
-					<li><a href="#">Newsletter &nbsp|</a></li>
+					<li><a href="#">Site Map</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Wish List</a></li>
+					<li><a href="#">Newsletter</a></li>
 					<li><a href="#">Specials</a></li>
 				</ul>
 			</div>
